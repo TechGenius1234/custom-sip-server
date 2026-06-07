@@ -1,0 +1,19 @@
+{
+    "users": [
+        {"extension": "100", "password": "password100", "name": "Admin"},
+        {"extension": "101", "password": "password101", "name": "User 1"}
+    ],
+    "trunks": [],
+    "ivr": {
+        "welcome_message": "welcome.wav",
+        "menu": {
+            "1": {"action": "dial", "target": "100"},
+            "2": {"action": "voicemail", "target": "100"},
+            "9": {"action": "hangup"}
+        }
+    },
+    "settings": {
+        "sip_port": 5060,
+        "rtp_port_range": [10000, 20000]
+    }
+}
